@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS Connect | Crisis Communication System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --palestine-green: #007A3D;
+            --palestine-red: #CE1126;
+            --palestine-black: #000000;
+            --palestine-white: #FFFFFF;
+            --light-gray: #F8F9FA;
+        }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--light-gray);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: var(--palestine-green);
+        }
+        
+        .navbar-brand span {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: var(--palestine-green);
+            color: white;
+            border-radius: 6px;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, var(--palestine-green) 0%, var(--palestine-green) 33%, 
+                        var(--palestine-white) 33%, var(--palestine-white) 66%, 
+                        var(--palestine-red) 66%, var(--palestine-red) 100%);
+            padding: 100px 0;
+            color: var(--palestine-black);
+        }
+        
+        .hero h1 {
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+        
+        .hero-content {
+            background-color: rgba(255,255,255,0.9);
+            padding: 30px;
+            border-radius: 10px;
+        }
+        
+        .feature-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            height: 100%;
+            border-top: 4px solid var(--palestine-green);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature-img {
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .feature-card .card-body {
+            padding: 25px;
+        }
+        
+        .step-card {
+            border-left: 4px solid var(--palestine-green);
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .step-number {
+            background-color: var(--palestine-green);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .sos-feature {
+            border-top-color: var(--palestine-red);
+        }
+        
+        footer {
+            background-color: var(--palestine-black);
+            color: var(--palestine-white);
+            padding: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+
+                SMS Connect
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">How It Works</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>Reconnecting Families in Crisis</h1>
+                        <p class="lead">SMS-based tracking system for displaced populations. No internet required - works on any mobile phone.</p>
+                        <div class="d-flex gap-2 mt-4">
+                            <a href="#features" class="btn btn-lg btn-success px-4">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                         alt="Family reunification" class="img-fluid rounded-3 shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Key Features</h2>
+                <p class="text-muted">Essential tools for humanitarian response</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             class="card-img-top feature-img" alt="Registration">
+                        <div class="card-body">
+                            <h5 class="card-title">Family Registration</h5>
+                            <p class="card-text">A simple SMS-based system to track displaced individuals, share locations, and facilitate family reunification in emergency situations..</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             class="card-img-top feature-img" alt="Location tracking">
+                        <div class="card-body">
+                            <h5 class="card-title">Location Updates</h5>
+                            <p class="card-text">Track movements as situations change with simple SMS commands.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1">• Latitude/longitude updates</li>
+                                <li class="mb-1">• Works with basic SMS</li>
+                                <li>• No internet required</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card sos-feature h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1573497019706-4a2b6bafc48a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             class="card-img-top feature-img" alt="Emergency alert">
+                        <div class="card-body">
+                            <h5 class="card-title">Emergency Alerts</h5>
+                            <p class="card-text">Immediate notification system for critical needs.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1">• One-tap SOS functionality</li>
+                                <li class="mb-1">• Automatic location sharing</li>
+                                <li>• Direct to response teams</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1516589091380-5d8e85700390?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             class="card-img-top feature-img" alt="Family search">
+                        <div class="card-body">
+                            <h5 class="card-title">Family Locator</h5>
+                            <p class="card-text">Find separated family members through verified contacts.</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-1">• Search by family contacts</li>
+                                <li class="mb-1">• Last known location</li>
+                                <li>• Secure verification</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">How It Works</h2>
+                <p class="text-muted">Simple SMS-based workflow for crisis situations</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm step-card">
+                        <div class="card-body p-4">
+                            <div class="step-number">1</div>
+                            <h4 class="mb-3">Registration</h4>
+                            <p>Field workers register displaced individuals via SMS with format:</p>
+                            <div class="bg-dark text-white p-3 rounded mb-3">
+                                <code>REG [Name]*[Age]*[Father's Phone]*[LAT]*[LONG]</code>
+                            </div>
+                            <p>System responds with unique ID for future reference.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm step-card">
+                        <div class="card-body p-4">
+                            <div class="step-number">2</div>
+                            <h4 class="mb-3">Location Updates</h4>
+                            <p>Individuals update their location when moving:</p>
+                            <div class="bg-dark text-white p-3 rounded mb-3">
+                                <code>UPDATE#[ID]*[LAT]*[LONG]</code>
+                            </div>
+                            <p>Coordinates are stored and shared with authorized NGOs.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm step-card">
+                        <div class="card-body p-4">
+                            <div class="step-number">3</div>
+                            <h4 class="mb-3">Emergency Alerts</h4>
+                            <p>Critical situations are reported immediately:</p>
+                            <div class="bg-dark text-white p-3 rounded mb-3">
+                                <code>SOS#[ID]*[Emergency Type]</code>
+                            </div>
+                            <p>Automatically includes last known location.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm step-card">
+                        <div class="card-body p-4">
+                            <div class="step-number">4</div>
+                            <h4 class="mb-3">Family Search</h4>
+                            <p>Locate family members through verified contacts:</p>
+                            <div class="bg-dark text-white p-3 rounded mb-3">
+                                <code>FIND#[Phone Number]</code>
+                            </div>
+                            <p>Returns last known location if authorized.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container text-center py-4">
+            <div class="mb-3">
+                <a href="#" class="text-white text-decoration-none fs-4 fw-bold">
+                    <span style="display: inline-block; width: 30px; height: 30px; background-color: var(--palestine-green); color: white; border-radius: 6px; text-align: center; line-height: 30px; margin-right: 10px;">SMS</span>
+                    SMS Connect
+                </a>
+            </div>
+            <p class="mb-0">A humanitarian communication system for crisis situations</p>
+            <p class="mb-0 text-muted">© 2023 All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
