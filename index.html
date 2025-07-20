@@ -21,7 +21,21 @@
         
         .navbar-brand {
             font-weight: 700;
-            color: var(--palestine-green);
+            background: linear-gradient(to right, var(--palestine-red) 33%, var(--palestine-white) 33%, var(--palestine-white) 66%, var(--palestine-green) 66%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            position: relative;
+        }
+        
+        .navbar-brand::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--palestine-black);
         }
         
         .navbar-brand span {
@@ -104,11 +118,23 @@
             color: var(--palestine-white);
             padding: 40px 0;
         }
+        
+        footer .navbar-brand {
+            font-size: 1.5rem;
+            background: linear-gradient(to right, var(--palestine-red) 33%, var(--palestine-white) 33%, var(--palestine-white) 66%, var(--palestine-green) 66%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        footer .navbar-brand::after {
+            background: var(--palestine-white);
+        }
     </style>
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #2a2a2a;">
         <div class="container">
             <a class="navbar-brand" href="#">
                 Heartbeat
@@ -116,16 +142,6 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#how-it-works">How It Works</a>
-                    </li>
-                </ul>
-            </div>
         </div>
     </nav>
 
@@ -136,7 +152,7 @@
                 <div class="col-lg-6">
                     <div class="hero-content">
                         <h1>Reconnecting Families in Crisis</h1>
-                        <p class="lead">SMS-based large-scale communication system for displaced populations. No internet required - works on any mobile phone.</p>
+                        <p class="lead">SMS-based large scale communication system for palestinians. No internet required - works on any mobile phone.</p>
                         <div class="d-flex gap-2 mt-4">
                             <a href="#features" class="btn btn-lg btn-success px-4">Learn More</a>
                         </div>
@@ -298,7 +314,7 @@
     <footer class="footer">
         <div class="container text-center py-4">
             <div class="mb-3">
-                <a href="#" class="navbar-brand"">
+                <a href="#" class="navbar-brand">
                 Heartbeat
             </a>
             </div>
